@@ -2,65 +2,180 @@
 <html lang="kk">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>4-СӨЖ: Цифрлық жобалар</title>
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: auto; padding: 20px; background-color: #f4f4f9; }
-        header { background: #2c3e50; color: white; padding: 10px; text-align: center; border-radius: 8px; }
-        section { background: white; margin: 20px 0; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        h2 { color: #2980b9; border-bottom: 2px solid #eee; }
-        .example-box { background: #e8f6f3; border-left: 5px solid #1abc9c; padding: 15px; }
-        code { background: #eee; padding: 2px 5px; border-radius: 4px; }
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --bg-color: #f4f7f6;
+            --card-bg: #ffffff;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+        section {
+            background: var(--card-bg);
+            margin-bottom: 30px;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: var(--secondary-color);
+            border-left: 5px solid var(--accent-color);
+            padding-left: 15px;
+            margin-top: 0;
+        }
+        .theory-list {
+            list-style: none;
+            padding: 0;
+        }
+        .theory-list li {
+            margin-bottom: 15px;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .theory-list strong {
+            color: var(--primary-color);
+        }
+        .example-box {
+            background: #fdf2e9;
+            border: 2px dashed #e67e22;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .project-image {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        th {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+        .badge {
+            display: inline-block;
+            background: var(--accent-color);
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #777;
+            font-size: 0.9em;
+        }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Цифрлық сауаттылық: Жобалық іс-әрекет</h1> [cite: 2]
+    <h1>Цифрлық сауаттылық пәніндегі жобалық іс-әрекет</h1>
+    <p>4-СӨЖ | Орындаған: Мирғайрат</p>
 </header>
 
-<section>
-    <h2>1. Теориялық талдау</h2>
-    <ul>
-        <li><strong>Негізгі ұғым:</strong> Бастауыш сыныптағы жобалардың түрлері — бұл оқушылардың жас ерекшелігіне сай таңдалған зерттеу және шығармашылық жұмыстары[cite: 12, 18, 20].</li>
-        <li><strong>Цифрлық сауаттылықтағы рөлі:</strong> Оқушылардың ақпаратты іздеу, өңдеу және техникалық құралдармен жұмыс істеу дағдыларын дамытады[cite: 10, 19].</li>
-        <li><strong>Мұғалім мен оқушы:</strong> Мұғалім — бағыттаушы, оқушы — белсенді орындаушы[cite: 7, 8, 21].</li>
-    </ul>
-</section>
+<div class="container">
+    
+    <section>
+        <h2>1. Теориялық талдау</h2>
+        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Education" class="project-image">
+        <ul class="theory-list">
+            <li><strong>Негізгі ұғым:</strong> Бастауыш сыныптағы жобалардың түрлері — бұл оқушылардың жас ерекшелігіне сай таңдалған, нақты нәтижеге бағытталған оқу-танымдық іс-әрекеті[cite: 12, 18].</li>
+            <li><strong>Цифрлық сауаттылықтағы рөлі:</strong> Оқушылардың ақпараттық технологияларды қолдану арқылы жаңа өнім жасау дағдыларын қалыптастыру[cite: 10, 19].</li>
+            <li><strong>Ерекшеліктері:</strong> Жобалар қысқа мерзімді, көрнекі және ойын элементтерімен байытылған болуы тиіс[cite: 20].</li>
+            <li><strong>Рөлдер:</strong> Мұғалім — бағыттаушы (консультант), оқушы — белсенді зерттеуші[cite: 21].</li>
+        </ul>
+    </section>
 
-<section>
-    <h2>2. Практикалық мысал: "Менің алғашқы веб-парақшам"</h2> [cite: 22, 24]
-    <div class="example-box">
-        <p><strong>Жағдай:</strong> Оқушыларға өздері туралы шағын мәліметті веб-бет түрінде шығару тапсырылады[cite: 28, 31].</p>
-        <p><strong>Қиындық:</strong> HTML тегтерін (h1, p, ul) дұрыс қолданып, ақпаратты жүйелеу[cite: 29].</p>
-        <p><strong>Шешу жолы:</strong> Төмендегі кодты пайдаланып, қарапайым құрылым жасау[cite: 30]:</p>
-        <pre>
-        &lt;h1&gt;Менің атым - Әли&lt;/h1&gt;
-        &lt;p&gt;Мен 4-сынып оқушысымын.&lt;/p&gt;
-        </pre>
-    </div>
-</section>
+    <section>
+        <h2>2. Практикалық мысал: "Менің алғашқы веб-визиткам"</h2>
+        <div class="badge">Мини-жоба</div>
+        <div class="example-box">
+            <p><strong>Жағдай:</strong> Оқушыларға өздерін және сүйікті істерін таныстыратын шағын веб-бетше жасау тапсырылады[cite: 28, 31].</p>
+            <p><strong>Қиындық:</strong> HTML тегтерін (h1, p, ul) дұрыс қолданып, ақпаратты құрылымдау[cite: 29].</p>
+            <p><strong>Шешу жолы:</strong> Оқушылар Notepad немесе онлайн редакторда қарапайым код жазып, оны браузерде іске қосады[cite: 30].</p>
+        </div>
+    </section>
 
-<section>
-    <h2>3. Бағалау критерийлері</h2> [cite: 13, 45]
-    <table border="1" style="width:100%; border-collapse: collapse; text-align: center;">
-        <tr style="background: #eee;">
-            <th>Критерий</th> [cite: 46]
-            <th>Балл</th> [cite: 46]
-        </tr>
-        <tr>
-            <td>Теориялық талдау сапасы</td> [cite: 46]
-            <td>3</td> [cite: 46]
-        </tr>
-        <tr>
-            <td>Практикалық мысал</td> [cite: 46]
-            <td>3</td> [cite: 46]
-        </tr>
-        <tr>
-            <td>Шығармашылық элемент</td> [cite: 46]
-            <td>3</td> [cite: 46]
-        </tr>
-    </table>
-</section>
+    <section>
+        <h2>3. Жұмысты бағалау (15 балл)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Критерий</th>
+                    <th>Сипаттама</th>
+                    <th>Балл</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Теориялық талдау</td>
+                    <td>Ұғымдардың толық ашылуы [cite: 46]</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Практикалық мысал</td>
+                    <td>Жобаның нақтылығы мен маңызы [cite: 46]</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Сәйкестік</td>
+                    <td>Бастауыш сынып деңгейіне бейімделу [cite: 46]</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Ұсыну сапасы</td>
+                    <td>HTML форматы мен креативтілік [cite: 46]</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Шығармашылық</td>
+                    <td>Дизайн мен идея ерекшелігі [cite: 46]</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Цифрлық сауаттылық және Педагогикалық жобалау</p>
+</footer>
 
 </body>
 </html>
